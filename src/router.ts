@@ -13,5 +13,8 @@ router.get("/me", async (req, res) => {
   // @ts-ignore
   res.json({ data: req.user });
 });
+// router.get("/post", async(req,res) => {
+//   const title = req.body.title
+// })
 
 export default router;

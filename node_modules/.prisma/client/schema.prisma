@@ -14,3 +14,16 @@ model User {
   password String
 }
 
+model Post {
+  id        String    @id @default(uuid())
+  createdAt DateTime  @default(now())
+  title     String
+  details  String
+  summary String
+  userId String
+  madeBy String
+  img String
+  Lat Float
+  Long Float
+}
+
